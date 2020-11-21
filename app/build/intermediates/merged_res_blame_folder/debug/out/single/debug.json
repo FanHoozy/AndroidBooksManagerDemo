@@ -44,12 +44,12 @@
         "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
-    },
-    {
         "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_search_light_32x32.png.flat",
         "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_search_light_32x32.png"
+    },
+    {
+        "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
     },
     {
         "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search_light_32x32.png.flat",
@@ -234,6 +234,10 @@
     {
         "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search_dark_32x32.png.flat",
         "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/generated/res/pngs/debug/drawable-mdpi/ic_search_dark_32x32.png"
+    },
+    {
+        "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/layout_list_item_show_more.xml.flat",
+        "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/res/layout/list_item_show_more.xml"
     },
     {
         "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_home_black_24dp.png.flat",

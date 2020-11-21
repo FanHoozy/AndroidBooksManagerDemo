@@ -1,5 +1,5 @@
-com/example/booksmanagerdemo11/ui/ShowMore/ShowMoreFragment.java
- com.example.booksmanagerdemo11.ui.ShowMore.ShowMoreFragment
+com/example/booksmanagerdemo11/ui/BookManager/LendManagerActivity.java
+ com.example.booksmanagerdemo11.ui.BookManager.LendManagerActivity
 com/example/booksmanagerdemo11/ui/home/HomeFragment.java
  com.example.booksmanagerdemo11.ui.home.HomeFragment
 com/example/booksmanagerdemo11/ui/BookManager/ShowLendedBookActivity.java
@@ -23,5 +23,6 @@ com/example/booksmanagerdemo11/ui/PersonalCenter/PersonalCenterViewModel.java
  com.example.booksmanagerdemo11.ui.PersonalCenter.PersonalCenterViewModel
 com/example/booksmanagerdemo11/MainActivity.java
  com.example.booksmanagerdemo11.MainActivity
-com/example/booksmanagerdemo11/ui/BookManager/LendManagerActivity.java
- com.example.booksmanagerdemo11.ui.BookManager.LendManagerActivity
+com/example/booksmanagerdemo11/ui/ShowMore/ShowMoreFragment.java
+ com.example.booksmanagerdemo11.ui.ShowMore.ShowMoreFragment
+ com.example.booksmanagerdemo11.ui.ShowMore.ShowMoreFragment$1
