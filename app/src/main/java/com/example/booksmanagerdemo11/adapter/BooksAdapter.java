@@ -53,7 +53,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
                         , Toast.LENGTH_SHORT).show();
             }
         });
-        
+
         return viewHolder;
     }
 

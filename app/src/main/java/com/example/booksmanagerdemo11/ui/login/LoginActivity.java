@@ -39,12 +39,14 @@ public class LoginActivity extends AppCompatActivity {
                 String username = et_username.getText().toString().trim();
                 String password = et_password.getText().toString().trim();
 
-                // 是否管理员登录（是否勾选）
+                // TODO 是否管理员登录（是否勾选）下面方法的返回值是boolean
                 cb_login_permission.isChecked();
                 /*
                 * @TODO 和后端交互确认
                 *
                 * */
+
+
                 if (username.equals("admin") && password.equals("123456")) {
                     Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_SHORT).show();
                 } else {
