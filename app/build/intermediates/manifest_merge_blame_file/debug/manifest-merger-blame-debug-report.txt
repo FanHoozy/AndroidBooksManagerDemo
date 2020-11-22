@@ -28,43 +28,55 @@
 19        android:testOnly="true"
 20        android:theme="@style/Theme.BooksManagerDemo11" >
 20-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:11:9-56
-21        <activity android:name="com.example.booksmanagerdemo11.ui.BookManager.LendManagerActivity" />
-21-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:12:9-81
-21-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:12:19-69
-22        <activity android:name="com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity" />
-22-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:13:9-72
-22-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:13:19-69
-23        <activity android:name="com.example.booksmanagerdemo11.ui.BookManager.ShowLendedBookActivity" />
-23-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:14:9-75
-23-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:14:19-72
-24        <activity android:name="com.example.booksmanagerdemo11.ui.login.LoginActivity" >
-24-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:15:9-20:20
-24-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:15:19-57
-25            <intent-filter>
-25-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:16:13-19:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:17:17-68
-26-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:17:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:18:17-76
-28-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:18:27-74
-29            </intent-filter>
-30        </activity>
-31        <activity
-31-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:21:9-29:20
-32            android:name="com.example.booksmanagerdemo11.MainActivity"
-32-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:22:13-41
-33            android:label="@string/app_name" >
-33-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:23:13-45
-34
-35            <!-- <intent-filter> -->
-36            <!-- <action android:name="android.intent.action.MAIN" /> -->
-37
-38
-39            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-40            <!-- </intent-filter> -->
-41        </activity>
-42    </application>
-43
-44</manifest>
+21        <activity
+21-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:12:9-103
+22            android:name="com.example.booksmanagerdemo11.ui.BookManager.LendManagerActivity"
+22-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:12:19-69
+23            android:label="借阅管理" />
+23-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:12:70-91
+24        <activity
+24-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:13:9-93
+25            android:name="com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity"
+25-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:13:19-69
+26            android:label="图书管理" />
+26-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:13:70-91
+27        <activity
+27-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:14:9-96
+28            android:name="com.example.booksmanagerdemo11.ui.BookManager.ShowLendedBookActivity"
+28-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:14:19-72
+29            android:label="查询已借" />
+29-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:14:73-94
+30        <activity
+30-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:15:9-20:20
+31            android:name="com.example.booksmanagerdemo11.ui.login.LoginActivity"
+31-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:15:19-57
+32            android:label="登录界面" >
+32-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:15:58-79
+33            <intent-filter>
+33-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:16:13-19:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:17:17-68
+34-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:17:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:18:17-76
+36-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:18:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:21:9-29:20
+40            android:name="com.example.booksmanagerdemo11.MainActivity"
+40-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:22:13-41
+41            android:label="@string/app_name" >
+41-->/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/AndroidManifest.xml:23:13-45
+42
+43            <!-- <intent-filter> -->
+44            <!-- <action android:name="android.intent.action.MAIN" /> -->
+45
+46
+47            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+48            <!-- </intent-filter> -->
+49        </activity>
+50    </application>
+51
+52</manifest>

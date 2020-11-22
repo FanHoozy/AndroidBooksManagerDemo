@@ -28,7 +28,9 @@ import com.example.booksmanagerdemo11.ui.login.LoginActivity;
  */
 public class PersonalCenterFragment extends Fragment {
     private static final String TAG = "PersonalCenterFragment";
-    private String[] personal_setting = {"登录","sdasdad"};
+
+    // TODO 这个数组可以从后端获取
+    private String[] personal_setting = {"姓名","id", "性别", "学院", "专业", "班级", "电话", "退出登录"};
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -46,10 +48,10 @@ public class PersonalCenterFragment extends Fragment {
                 Log.e(TAG, String.valueOf(position));
                 switch (position)
                 {
-                    case 0:
+                    case 7:
+                        // TODO 清除登录的账号信息
+
                         intent.setClass(getActivity(), LoginActivity.class);
-                        break;
-                    case 1:
                         break;
                     default:
                         return;
@@ -57,10 +59,6 @@ public class PersonalCenterFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-
-
-
         return view;
     }
 }

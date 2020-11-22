@@ -18,10 +18,18 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.BooksManagerDemo11" >
-        <activity android:name="com.example.booksmanagerdemo11.ui.BookManager.LendManagerActivity" />
-        <activity android:name="com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity" />
-        <activity android:name="com.example.booksmanagerdemo11.ui.BookManager.ShowLendedBookActivity" />
-        <activity android:name="com.example.booksmanagerdemo11.ui.login.LoginActivity" >
+        <activity
+            android:name="com.example.booksmanagerdemo11.ui.BookManager.LendManagerActivity"
+            android:label="借阅管理" />
+        <activity
+            android:name="com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity"
+            android:label="图书管理" />
+        <activity
+            android:name="com.example.booksmanagerdemo11.ui.BookManager.ShowLendedBookActivity"
+            android:label="查询已借" />
+        <activity
+            android:name="com.example.booksmanagerdemo11.ui.login.LoginActivity"
+            android:label="登录界面" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
