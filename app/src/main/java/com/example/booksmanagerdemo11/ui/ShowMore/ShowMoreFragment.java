@@ -31,11 +31,9 @@ public class ShowMoreFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.e(TAG, "onCreateView: 9191919");
         View view = inflater.inflate(R.layout.fragment_show_more, container, false);
         // 获取ListView控件
         ListView lv_ps = view.findViewById(R.id.lv_show_more);
-        Log.e(TAG, "onCreateView: 51515");
         ListAdapter adapter = new ArrayAdapter(view.getContext(), android.R.layout.simple_list_item_1, contents);
         lv_ps.setAdapter(adapter);
 
@@ -60,7 +58,6 @@ public class ShowMoreFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        Log.e(TAG, "onCreateView: 12313123");
         return view;
     }
 }

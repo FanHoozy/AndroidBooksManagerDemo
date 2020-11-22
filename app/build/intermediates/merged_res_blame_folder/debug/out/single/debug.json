@@ -52,6 +52,10 @@
         "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
     },
     {
+        "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/layout_rcl_item_books.xml.flat",
+        "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/src/main/res/layout/rcl_item_books.xml"
+    },
+    {
         "merged": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search_light_32x32.png.flat",
         "source": "/home/fanyuhongzhe/ClassCode/Android/BooksManagerDemo11/app/build/generated/res/pngs/debug/drawable-mdpi/ic_search_light_32x32.png"
     },
