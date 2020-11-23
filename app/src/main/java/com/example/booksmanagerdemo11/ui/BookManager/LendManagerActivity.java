@@ -21,6 +21,5 @@ public class LendManagerActivity extends AppCompatActivity {
         // TODO 在创建时直接新建线程获取并展示
 
 
-
     }
 }

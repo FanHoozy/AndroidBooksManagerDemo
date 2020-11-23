@@ -2020,9 +2020,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_author
 id tv_classification
 id tv_no_lend
-id tv_singer
 id tv_title
 id unchecked
 id uniform

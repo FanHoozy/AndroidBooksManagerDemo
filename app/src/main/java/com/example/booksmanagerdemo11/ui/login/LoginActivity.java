@@ -3,6 +3,7 @@ package com.example.booksmanagerdemo11.ui.login;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,8 +40,25 @@ public class LoginActivity extends AppCompatActivity {
                 String username = et_username.getText().toString().trim();
                 String password = et_password.getText().toString().trim();
 
+
+                // 保存数据
+                SharedPreferences.Editor editor = getSharedPreferences("data",
+                        MODE_PRIVATE).edit();
+                editor.putString("username", username);
+                editor.apply(); // 异步
+
+                
+
+
+
                 // TODO 是否管理员登录（是否勾选）下面方法的返回值是boolean
-                cb_login_permission.isChecked();
+                if (cb_login_permission.isChecked()) {
+                    // 读取数据
+                    SharedPreferences pref = getSharedPreferences("UserData", MODE_PRIVATE);
+                    username = pref.getString("username","");
+                    password = pref.getString("password", "");
+                    boolean married = pref.getBoolean("married", false);
+                }
                 /*
                 * @TODO 和后端交互确认
                 *
@@ -54,14 +72,11 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        // 获取按键取消
+        // 获取按键退出
         Button btnCancel = findViewById(R.id.btn_cancel_login);
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 返回主界面
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
                 finish();
             }
         });

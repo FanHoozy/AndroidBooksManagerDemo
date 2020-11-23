@@ -2019,9 +2019,9 @@ int id transition_position 0x7f09017f
 int id transition_scene_layoutid_cache 0x7f090180
 int id transition_transform 0x7f090181
 int id triangle 0x7f090182
-int id tv_classification 0x7f090183
-int id tv_no_lend 0x7f090184
-int id tv_singer 0x7f090185
+int id tv_author 0x7f090183
+int id tv_classification 0x7f090184
+int id tv_no_lend 0x7f090185
 int id tv_title 0x7f090186
 int id unchecked 0x7f090187
 int id uniform 0x7f090188
