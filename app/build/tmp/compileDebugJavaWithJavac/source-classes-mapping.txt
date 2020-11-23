@@ -1,12 +1,21 @@
 com/example/booksmanagerdemo11/ui/ShowMore/ShowMoreFragment.java
  com.example.booksmanagerdemo11.ui.ShowMore.ShowMoreFragment
  com.example.booksmanagerdemo11.ui.ShowMore.ShowMoreFragment$1
+com/example/booksmanagerdemo11/adapter/BooksAdapter.java
+ com.example.booksmanagerdemo11.adapter.BooksAdapter
+ com.example.booksmanagerdemo11.adapter.BooksAdapter$1
+ com.example.booksmanagerdemo11.adapter.BooksAdapter$ViewHolder
 com/example/booksmanagerdemo11/ui/BookManager/BooksManageActivity.java
  com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity
+ com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity$1
+ com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity$2
+ com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity$3
 com/example/booksmanagerdemo11/MainActivity.java
  com.example.booksmanagerdemo11.MainActivity
 com/example/booksmanagerdemo11/ui/BookManager/LendManagerActivity.java
  com.example.booksmanagerdemo11.ui.BookManager.LendManagerActivity
+com/example/booksmanagerdemo11/domain/Book.java
+ com.example.booksmanagerdemo11.domain.Book
 com/example/booksmanagerdemo11/ui/home/HomeFragment.java
  com.example.booksmanagerdemo11.ui.home.HomeFragment
  com.example.booksmanagerdemo11.ui.home.HomeFragment$1
@@ -15,8 +24,9 @@ com/example/booksmanagerdemo11/ui/BookManager/ShowLendedBookActivity.java
  com.example.booksmanagerdemo11.ui.BookManager.ShowLendedBookActivity
 com/example/booksmanagerdemo11/ui/ShowMore/ShowMoreViewModel.java
  com.example.booksmanagerdemo11.ui.ShowMore.ShowMoreViewModel
-com/example/booksmanagerdemo11/ui/PersonalCenter/PersonalCenterViewModel.java
- com.example.booksmanagerdemo11.ui.PersonalCenter.PersonalCenterViewModel
+com/example/booksmanagerdemo11/ui/PersonalCenter/PersonalCenterFragment.java
+ com.example.booksmanagerdemo11.ui.PersonalCenter.PersonalCenterFragment
+ com.example.booksmanagerdemo11.ui.PersonalCenter.PersonalCenterFragment$1
 com/example/booksmanagerdemo11/service/NetworkService.java
  com.example.booksmanagerdemo11.service.NetworkService
 com/example/booksmanagerdemo11/BuildConfig.java
@@ -27,6 +37,5 @@ com/example/booksmanagerdemo11/ui/login/LoginActivity.java
  com.example.booksmanagerdemo11.ui.login.LoginActivity$2
 com/example/booksmanagerdemo11/ui/home/HomeViewModel.java
  com.example.booksmanagerdemo11.ui.home.HomeViewModel
-com/example/booksmanagerdemo11/ui/PersonalCenter/PersonalCenterFragment.java
- com.example.booksmanagerdemo11.ui.PersonalCenter.PersonalCenterFragment
- com.example.booksmanagerdemo11.ui.PersonalCenter.PersonalCenterFragment$1
+com/example/booksmanagerdemo11/ui/PersonalCenter/PersonalCenterViewModel.java
+ com.example.booksmanagerdemo11.ui.PersonalCenter.PersonalCenterViewModel
