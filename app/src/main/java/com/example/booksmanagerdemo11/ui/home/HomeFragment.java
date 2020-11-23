@@ -1,6 +1,7 @@
 package com.example.booksmanagerdemo11.ui.home;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,11 +21,22 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.booksmanagerdemo11.R;
+import com.example.booksmanagerdemo11.adapter.BooksAdapter;
+import com.example.booksmanagerdemo11.domain.Book;
 import com.example.booksmanagerdemo11.service.NetworkService;
 
+import org.json.JSONArray;
+
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.List;
+
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 /**
  * @TODO
@@ -32,7 +44,8 @@ import java.util.List;
  */
 public class HomeFragment extends Fragment {
     private static final String TAG = "HomeFragment";
-
+    private Handler handler;
+    private BooksAdapter booksAdapter;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -47,38 +60,45 @@ public class HomeFragment extends Fragment {
         ibSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String book = etSearchBook.getText().toString().trim();
-                if (book.isEmpty()) {
-                    Toast.makeText(getContext(), "请输入书本的名字", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                try {
-                    book = URLEncoder.encode(book, "UTF-8");
-                } catch (UnsupportedEncodingException e) {
-                    e.printStackTrace();
-                }
-                // TODO 添加地址
-                String urlStr = "" + book;
+                String SearchBook = etSearchBook.getText().toString().trim();
+                // 添加地址
+                String urlStr = "8080/android_library_management_system_war_exploded/searchBook";
+
+
                 new Thread(){
                     @Override
                     public void run() {
-                        // 获取json字符串
-                        String jsonString = NetworkService.getJsonString(urlStr);
-                        Log.e(TAG, "run: " + jsonString );
-                        // TODO 解析json，并封装对象 还需要创建一个对象
-//                        final List<Music> musicList = music.parseJsonStringToMusicObject(jsonString);
-//                        Log.e(TAG, "run: musicList" + musicList);
-//                        // 回主线程设置数据，刷新页面
-//                        handler.post(new Runnable() {
-//                            @Override
-//                            public void run() {
-//                                // 这里在主线程中运行
-//                                musicAdapter.setMusicList(musicList);
-//                            }
-//                        });
+                        try {
+                        OkHttpClient client = new OkHttpClient();
+                        RequestBody requestBody = new FormBody.Builder()
+                                .add("bookName",SearchBook)
+                                .build();
+
+                        Request request = new Request.Builder()
+                                .url(urlStr)
+                                .post(requestBody)
+                                .build();
+                            Response response = client.newCall(request).execute();
+
+
+                            String responseData = response.body().string();
+                            // 解析json，并封装对象
+                            List<Book> bookList =new HomeViewModel().parseJsonStringToBookObject(responseData);
+                            // 回主线程设置数据，刷新页面
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    // 在主线程运行
+                                    booksAdapter.setBookList(bookList);
+
+                                }
+                            });
 
 
 
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }.start();
 
@@ -97,8 +117,9 @@ public class HomeFragment extends Fragment {
         rclContent.setLayoutManager(linearLayoutManager);
 
         // 适配器
-
+        booksAdapter = new BooksAdapter(R.layout.rcl_item_books);
         // 设置适配器
+        rclContent.setAdapter(booksAdapter);
 
     }
 

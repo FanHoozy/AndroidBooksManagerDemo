@@ -22,8 +22,19 @@ public class ShowLendedBookActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_lended_book);
 
-        // TODO 在创建时直接新建线程获取并展示
+        // TODO 用来解析json的对象
 
+
+        // TODO 在创建时直接新建线程获取并展示
+//        final String urlStr = "https://api.douban.com/v2/music/search?count=20&q=";
+//
+//        // 开启子线程
+//        new Thread(){
+//            @Override
+//            public void run() {
+//
+//            }
+//        }.start();
 
 
 
