@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".ui.PersonalCenter.PersonalCenterFragment"
     android:baselineAligned="false">
 
@@ -19,4 +20,12 @@
         android:layout_gravity="right"
         android:layout_height="wrap_content"
         tools:ignore="RtlHardcoded" />
+=======
+    tools:context=".ui.PersonalCenter.PersonalCenterFragment">
+
+    <ListView
+        android:id="@+id/lv_personal_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 </LinearLayout>

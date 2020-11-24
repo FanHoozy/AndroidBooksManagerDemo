@@ -1,5 +1,6 @@
 package com.example.booksmanagerdemo11.ui.ShowMore;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+=======
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +26,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.booksmanagerdemo11.R;
+<<<<<<< HEAD
 import com.example.booksmanagerdemo11.ui.BookManager.BooksManageActivity;
 import com.example.booksmanagerdemo11.ui.BookManager.LendManagerActivity;
 import com.example.booksmanagerdemo11.ui.BookManager.ShowLendedBookActivity;
@@ -59,5 +67,25 @@ public class ShowMoreFragment extends Fragment {
             }
         });
         return view;
+=======
+
+public class ShowMoreFragment extends Fragment {
+
+    private ShowMoreViewModel showMoreViewModel;
+
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        showMoreViewModel =
+                new ViewModelProvider(this).get(ShowMoreViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        final TextView textView = root.findViewById(R.id.text_dashboard);
+        showMoreViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                textView.setText(s);
+            }
+        });
+        return root;
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
     }
 }

@@ -76,7 +76,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="4"
+<<<<<<< HEAD
                 android:inputType="textPassword"
+=======
+
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
                 android:hint="@string/please_input_password" />
 
         </LinearLayout>
@@ -99,6 +103,7 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_weight="0.5"
             android:layout_height="0dp">
             <CheckBox
@@ -116,6 +121,8 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
+=======
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
             android:layout_height="0dp"
             android:layout_weight="1">
 

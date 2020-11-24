@@ -1,5 +1,6 @@
 package com.example.booksmanagerdemo11.ui.login;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +8,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -15,6 +22,7 @@ import android.widget.Toast;
 
 import com.example.booksmanagerdemo11.MainActivity;
 import com.example.booksmanagerdemo11.R;
+<<<<<<< HEAD
 import com.example.booksmanagerdemo11.domain.Data;
 
 import org.json.JSONObject;
@@ -28,6 +36,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+=======
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 
 /**
  *  登录页面
@@ -37,14 +47,19 @@ public class LoginActivity extends AppCompatActivity {
     private EditText et_username;
     private EditText et_password;
     private CheckBox cb_login_permission;
+<<<<<<< HEAD
     private CheckBox cb_remember;
     private SharedPreferences perf;
     private SharedPreferences.Editor editor;
+=======
+
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+<<<<<<< HEAD
         perf= PreferenceManager.getDefaultSharedPreferences(this);
 
         // 获取EditText
@@ -63,6 +78,12 @@ public class LoginActivity extends AppCompatActivity {
             cb_remember.setChecked(true);
         }
 
+=======
+        // 获取EditText
+        et_username = (EditText) findViewById(R.id.et_username);
+        et_password = (EditText) findViewById(R.id.et_password);
+        cb_login_permission = (CheckBox) findViewById(R.id.cb_login_permission);
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
         // 获取按键登录
         Button btnLogin = findViewById(R.id.btn_login);
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +91,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String username = et_username.getText().toString().trim();
                 String password = et_password.getText().toString().trim();
+<<<<<<< HEAD
                 String power;
 
                 // TODO 是否管理员登录（是否勾选）下面方法的返回值是boolean
@@ -78,10 +100,16 @@ public class LoginActivity extends AppCompatActivity {
                 } else {
                     power = "学生";
                 }
+=======
+
+                // 是否管理员登录（是否勾选）
+                cb_login_permission.isChecked();
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
                 /*
                 * @TODO 和后端交互确认
                 *
                 * */
+<<<<<<< HEAD
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -135,13 +163,28 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+=======
+                if (username.equals("admin") && password.equals("123456")) {
+                    Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(LoginActivity.this, "登录失败！", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
         // 获取按键取消
         Button btnCancel = findViewById(R.id.btn_cancel_login);
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 返回主界面
+<<<<<<< HEAD
                 android.os.Process.killProcess(android.os.Process.myPid());
+=======
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
             }
         });
 

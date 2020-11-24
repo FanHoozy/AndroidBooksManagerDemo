@@ -1,6 +1,7 @@
 package com.example.booksmanagerdemo11.ui.BookManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -89,5 +90,21 @@ public class LendManagerActivity extends AppCompatActivity {
         }catch (Exception e){
             e.printStackTrace();
         }
+=======
+
+import android.os.Bundle;
+
+import com.example.booksmanagerdemo11.R;
+
+/**
+ * @TODO 借阅管理界面制作
+ */
+public class LendManagerActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lend_manager);
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
     }
 }

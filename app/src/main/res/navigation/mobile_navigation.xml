@@ -15,7 +15,11 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.example.booksmanagerdemo11.ui.ShowMore.ShowMoreFragment"
         android:label="@string/title_dashboard"
+<<<<<<< HEAD
         tools:layout="@layout/fragment_show_more" />
+=======
+        tools:layout="@layout/fragment_dashboard" />
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 
     <fragment
         android:id="@+id/navigation_notifications"

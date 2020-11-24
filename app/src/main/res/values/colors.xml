@@ -9,7 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="textview_color">#0000FF</color>
     <color name="button_textcolor">#00FF00</color>
+<<<<<<< HEAD
     <color name="transparency">#00000000</color>
     <color name="title_bg">#FF9ed913</color>
     <color name="end_color">#A0cfef83</color>
+=======
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 </resources>

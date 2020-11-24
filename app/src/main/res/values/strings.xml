@@ -9,5 +9,8 @@
     <string name="please_input_password">请输入密码</string>
     <string name="login">登录</string>
     <string name="cancel">取消</string>
+<<<<<<< HEAD
     <string name="borrows_management">借阅管理</string>
+=======
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 </resources>

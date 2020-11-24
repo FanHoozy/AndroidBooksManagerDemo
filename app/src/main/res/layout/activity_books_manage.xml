@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".ui.BookManager.BooksManageActivity"
     android:orientation="vertical">
     <TextView
@@ -45,3 +50,8 @@
         android:layout_height="wrap_content" />
 
 </LinearLayout>
+=======
+    tools:context=".ui.BookManager.BooksManageActivity">
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72

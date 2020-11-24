@@ -10,10 +10,16 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+<<<<<<< HEAD
+=======
+import android.widget.TextView;
+import android.widget.Toast;
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+<<<<<<< HEAD
 
 import com.example.booksmanagerdemo11.MainActivity;
 import com.example.booksmanagerdemo11.R;
@@ -34,19 +40,33 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+=======
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+
+import com.example.booksmanagerdemo11.MainActivity;
+import com.example.booksmanagerdemo11.R;
+import com.example.booksmanagerdemo11.ui.login.LoginActivity;
+
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
 /**
  * 个人中心页面
  */
 public class PersonalCenterFragment extends Fragment {
     private static final String TAG = "PersonalCenterFragment";
+<<<<<<< HEAD
 
     // TODO 这个数组可以从后端获取
     private final String[] personal_setting = {"姓名","id", "性别", "学院", "专业", "班级", "电话", "退出登录"};
     private final String[] message = new String[7];
+=======
+    private String[] personal_setting = {"登录","sdasdad"};
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_personal_center, container, false);
+<<<<<<< HEAD
 
         new Thread(new Runnable() {
             @Override
@@ -102,6 +122,12 @@ public class PersonalCenterFragment extends Fragment {
         ListView lv_ps = view.findViewById(R.id.lv_personal_center);
 
         ListAdapter adapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, personal_setting);
+=======
+        // 获取ListView控件
+        ListView lv_ps = view.findViewById(R.id.lv_personal_center);
+
+        ListAdapter adapter = new ArrayAdapter(view.getContext(), android.R.layout.simple_list_item_1, personal_setting);
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
         lv_ps.setAdapter(adapter);
 
         lv_ps.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -111,17 +137,32 @@ public class PersonalCenterFragment extends Fragment {
                 Log.e(TAG, String.valueOf(position));
                 switch (position)
                 {
+<<<<<<< HEAD
                     case 7:
                         // TODO 清除登录的账号信息
 
                         intent.setClass(getActivity(), LoginActivity.class);
                         break;
+=======
+                    case 0:
+                        intent.setClass(getActivity(), LoginActivity.class);
+                        break;
+                    case 1:
+                        break;
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
                     default:
                         return;
                 }
                 startActivity(intent);
             }
         });
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> ebed69abb19d460f857b96fd5bf1ef8a750a1f72
         return view;
     }
 }
